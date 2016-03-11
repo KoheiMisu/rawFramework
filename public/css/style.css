@@ -1,0 +1,11 @@
+#content {
+  height: 30px;
+}
+
+.top-date, .top-category{
+  margin-right: 10px;
+}
+
+.pagination {
+  text-align: center;
+}
