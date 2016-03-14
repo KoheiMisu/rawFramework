@@ -99,7 +99,7 @@
               Panel heading
             </div>
             <div class="panel-body">
-              <div id="content">content</div>
+              <div id="content">contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</div>
               <div id="footer">
                 <span class="label label-info top-date">2016-03-03</span>
                 <span class="top-category"><a href="javascript:void(0)" class="btn btn-default">Category<div class="ripple-container"></div></a></span>
