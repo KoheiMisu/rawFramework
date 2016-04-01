@@ -22,9 +22,6 @@
   <link href="./public/css/ripples.min.css" rel="stylesheet">
   <link href="./public/css/style.css" rel="stylesheet">
 
-  <!-- Dropdown.js -->
-  <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
-
   <!-- jQuery -->
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
@@ -144,12 +141,6 @@
 <script src="./public/js/ripples.min.js"></script>
 <script>
   $.material.init();
-</script>
-
-<!-- Dropdown.js -->
-<script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
-<script>
-  $("#dropdown-menu select").dropdown();
 </script>
 
 </body>

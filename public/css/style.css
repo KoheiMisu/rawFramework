@@ -27,3 +27,7 @@
     white-space: nowrap;/* keep text on a single line to trigger text-overflow; */
     display: block;/* reset to basic behavior of h1 , else inline-block drops down if not enough room */
 }
+
+#search_text {
+    width: 250px;
+}
