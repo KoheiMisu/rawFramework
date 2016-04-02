@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
   <title>Material Design for Bootstrap</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
 
   <!-- Mobile support -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -142,6 +141,8 @@
 <script>
   $.material.init();
 </script>
-
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.11.2.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 </body>
 </html>
