@@ -9,13 +9,14 @@ class Dispatcher
         $this->sysRoot = rtrim($path, '/');
     }
 
-    public function dispatch($rootParam)
+    public function dispatch()
     {
         // パラメーター取得（末尾の / は削除）
         if ($_SERVER['REQUEST_URI'] == '/') {
-            $param = $rootParam;
+            $param = 'articles/index';
         } else {
-            $param = ereg_replace('/?$', '', $_SERVER['REQUEST_URI']);
+            //先頭と末尾の' / 'を削除
+            $param = preg_replace(['/^\//', '/\/$/'], '', $_SERVER['REQUEST_URI']);
         }
 
         $params = array();

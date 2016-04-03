@@ -21,3 +21,24 @@ define('VENDOR', dirname(__DIR__) . DS . "vendor");
  * webroot path
  */
 define('PUBLIC', dirname(__DIR__) . DS . "public");
+
+/**
+ * Model path
+ */
+define('Model', dirname(__DIR__) . DS . "Model");
+
+/**
+ * View path
+ */
+define('View', VENDOR . DS . "View");
+
+
+/**
+ * Controller path
+ */
+define('Controller', dirname(__DIR__) . DS . "Controller");
+
+/**
+ * Routing path
+ */
+define('Routing', VENDOR . DS . "Routing");
