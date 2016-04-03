@@ -3,7 +3,7 @@ var browserSync   = require('browser-sync').create();
 var reload        = browserSync.reload;
 
 gulp.task('default', ['server'], function() {
-  gulp.watch('./*', ['reload']);
+  gulp.watch('./*/*', ['reload']);
 });
 
 gulp.task('server', function() {

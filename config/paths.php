@@ -20,7 +20,22 @@ define('VENDOR', dirname(__DIR__) . DS . "vendor");
 /**
  * webroot path
  */
-define('PUBLIC', dirname(__DIR__) . DS . "public");
+define('WEBROOT', dirname(__DIR__) . DS . "public");
+
+/**
+ * js path
+ */
+define('JS', WEBROOT . DS . "js");
+
+/**
+ * css path
+ */
+define('CSS', WEBROOT . DS . "css");
+
+/**
+ * img path
+ */
+define('IMG', WEBROOT . DS . "img");
 
 /**
  * Model path
@@ -30,7 +45,22 @@ define('Model', dirname(__DIR__) . DS . "Model");
 /**
  * View path
  */
-define('View', VENDOR . DS . "View");
+define('View', dirname(__DIR__) . DS . "View");
+
+/**
+ * Template path
+ */
+define('Layouts', View . DS . "Layouts");
+
+/**
+ * Elements path
+ */
+define('Elements', View . DS . "Elements");
+
+/**
+ * VendorView Class path
+ */
+define('VendorView', VENDOR . DS . "View");
 
 
 /**

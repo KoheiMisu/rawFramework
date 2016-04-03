@@ -3,7 +3,7 @@
 return [
     Model,
     Controller,
-    View,
+    VendorView,
     Routing,
     Request
 ];

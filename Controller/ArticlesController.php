@@ -1,15 +1,15 @@
 <?php
 
-Class ArticlesController {
+Class ArticlesController extends BaseController{
 
-    public function __construct()
+    public function __construct($controller, $action)
     {
+        parent::__construct($controller, $action);
         // $Articles = new Article('root', '1212');
     }
 
     public function indexAction()
     {
-        echo "hello";
     }
 
     public function confirmAction()
