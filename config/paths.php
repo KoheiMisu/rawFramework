@@ -42,3 +42,8 @@ define('Controller', dirname(__DIR__) . DS . "Controller");
  * Routing path
  */
 define('Routing', VENDOR . DS . "Routing");
+
+/**
+ * Request path
+ */
+define('Request', VENDOR . DS . "Request");
