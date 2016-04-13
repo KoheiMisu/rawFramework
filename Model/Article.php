@@ -2,14 +2,11 @@
 
 class Article
 {
-    private $db;
-
     /* @var string */
     private $name;
 
-    public function __construct($user, $pass)
+    public function __construct()
     {
-        $this->db = new PDO($user, $pass);
         $this->name = mb_strtolower(get_class($this));
     }
 
