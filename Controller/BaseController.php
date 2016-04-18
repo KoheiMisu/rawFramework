@@ -16,10 +16,10 @@ Class BaseController{
         $this->action = $action;
     }
 
-    public function render()
+    public function render($vars)
     {
         $this->view->init($this->controller, $this->action);
-        $this->view->render();
+        $this->view->render($vars);
     }
 
 }

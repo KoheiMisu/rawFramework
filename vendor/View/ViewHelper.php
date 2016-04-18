@@ -23,9 +23,7 @@ Class ViewHelper {
      */
     public function form($path)
     {
-        echo "
-
-        ";
+        echo "";
     }
 
     /**

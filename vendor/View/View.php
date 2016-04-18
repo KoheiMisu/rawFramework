@@ -5,6 +5,7 @@ Class View extends ViewHelper {
     protected $layout = 'default.php';
     protected $templateDir;
     protected $template;
+    protected $vars;
 
     /**
      * @param string $controller action名のテンプレートが呼ばれる
@@ -17,10 +18,12 @@ Class View extends ViewHelper {
     }
 
     /**
+     * @param mixed stinrg | array
      * @return void
      */
-    public function render()
+    public function render($vars)
     {
+        $this->vars = $vars;
         require_once Layouts . DS . $this->layout;
     }
 

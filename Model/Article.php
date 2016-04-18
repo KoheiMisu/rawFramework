@@ -3,19 +3,46 @@
 class Article
 {
     /* @var string */
-    private $name;
+    private static $table_name='article';
 
-    public function __construct()
-    {
-        $this->name = mb_strtolower(get_class($this));
+    /**
+     * @param  int $id
+     * @return array
+     */
+    public static function find($id) {
+        return DB::select(self::$table_name, array('id' => $id), 1);
     }
 
-    // 投稿全件取得
-    public function getAllPost()
-    {
-        $sql = sprintf('SELECT * FROM %s', $this->name);
-        $stmt = $this->db->query($sql);
-        $rows = $stmt->fetchAll();
-        return $rows[0];
+    /**
+     * @param  array  $where [description]
+     * @return array
+     */
+    public static function findAll($where = array()) {
+        return DB::select(self::$table_name, $where);
+    }
+
+    /**
+     * @param  array
+     * @return boolean
+     */
+    public static function create($values) {
+        return DB::insert(self::$table_name, $values);
+    }
+
+    /**
+     * @param  int $id
+     * @param  array $values
+     * @return boolean
+     */
+    public static function update($id, $values) {
+        return DB::update(self::$table_name, $id, $values);
+    }
+
+    /**
+     * @param  int $id
+     * @return boolean
+     */
+    public static function delete($id) {
+        return DB::delete(self::$table_name, $id);
     }
 }

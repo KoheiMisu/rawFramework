@@ -61,6 +61,6 @@ class Dispatcher
         // アクションメソッドを実行
         $actionMethod = $action . 'Action';
         $controllerInstance->$actionMethod();
-        $controllerInstance->render();
+        // $controllerInstance->render();
     }
 }
